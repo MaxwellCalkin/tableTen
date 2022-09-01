@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Table10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Kaisei+Tokumin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Create Your VERY OWN Todolist!</h1>
-    <a href="/login"> Login</a>
-    <a href="/signup"> Signup</a>
+<body class="index">
+    <div class="container">
+        <section class="title">
+            <h1>Welcome To Table10</h1>
+            <h3>Log in below, or click "Signup" to create an account.</h3>
+        </section>
+        <div class="loginForm">
+            <form action="/login" method="POST">
+                <input type="email" name="email" class="email" placeholder="Email">
+                <input type="password" name="password" class="password" placeholder="Password">
+                <input type="submit" class="submit">
+            </form>
+        </div>
+        <div class="signup">
+            <h4>or</h4>
+            <button class="signUpButton">
+                <a href="/signup" class="signUp"> Signup</a>
+            </button>
+        </div>    
+    </div>
 </body>
 </html>
