@@ -1,18 +1,31 @@
 const mongoose = require('mongoose')
 
-const TodoSchema = new mongoose.Schema({
-  todo: {
+const EventSchema = new mongoose.Schema({
+  event: {
     type: String,
     required: true,
   },
-  completed: {
+  expired: {
     type: Boolean,
     required: true,
   },
   userId: {
     type: String,
     required: true
+  },
+  date: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: false
+  },
+  location: {
+    type: String,
+    required: false
   }
 })
 
-module.exports = mongoose.model('Todo', TodoSchema)
+module.exports = mongoose.model('Todo', EventSchema)
+

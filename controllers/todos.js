@@ -53,3 +53,6 @@ module.exports = {
         }
     }
 }    
+
+
+//need new methods based on whatever info displayed
